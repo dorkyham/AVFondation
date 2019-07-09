@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B071DAA722D492F80096266D /* RulesOfThirds-PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = B071DAA622D492F80096266D /* RulesOfThirds-PNG.png */; };
+		B071DAA922D4941B0096266D /* image-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B071DAA822D4941B0096266D /* image-1.png */; };
 		B0F7B0A922D32ABE0099A4D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B0A822D32ABE0099A4D8 /* AppDelegate.swift */; };
 		B0F7B0AB22D32ABE0099A4D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B0AA22D32ABE0099A4D8 /* ViewController.swift */; };
 		B0F7B0AE22D32ABE0099A4D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F7B0AC22D32ABE0099A4D8 /* Main.storyboard */; };
@@ -14,13 +16,11 @@
 		B0F7B0B322D32AC00099A4D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F7B0B122D32AC00099A4D8 /* LaunchScreen.storyboard */; };
 		B0F7B0BD22D33DAC0099A4D8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B0BC22D33DAC0099A4D8 /* PhotoViewController.swift */; };
 		B0F7B0C122D47CCD0099A4D8 /* Oval.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7B0C022D47CCC0099A4D8 /* Oval.png */; };
-		B0F7B0C322D480DB0099A4D8 /* GoldenTriangleGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7B0C222D480DB0099A4D8 /* GoldenTriangleGrid.png */; };
-		B0F7B0C622D483300099A4D8 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B0C422D483300099A4D8 /* OverlayViewController.swift */; };
-		B0F7B0C722D483300099A4D8 /* OverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7B0C522D483300099A4D8 /* OverlayViewController.xib */; };
-		B0F7B0C922D485510099A4D8 /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B0C822D485510099A4D8 /* CustomOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B071DAA622D492F80096266D /* RulesOfThirds-PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RulesOfThirds-PNG.png"; sourceTree = "<group>"; };
+		B071DAA822D4941B0096266D /* image-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-1.png"; sourceTree = "<group>"; };
 		B0F7B0A522D32ABE0099A4D8 /* AVFondation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFondation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F7B0A822D32ABE0099A4D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F7B0AA22D32ABE0099A4D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,10 +30,6 @@
 		B0F7B0B422D32AC00099A4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F7B0BC22D33DAC0099A4D8 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		B0F7B0C022D47CCC0099A4D8 /* Oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oval.png; sourceTree = "<group>"; };
-		B0F7B0C222D480DB0099A4D8 /* GoldenTriangleGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldenTriangleGrid.png; sourceTree = "<group>"; };
-		B0F7B0C422D483300099A4D8 /* OverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
-		B0F7B0C522D483300099A4D8 /* OverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayViewController.xib; sourceTree = "<group>"; };
-		B0F7B0C822D485510099A4D8 /* CustomOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				B0F7B0C022D47CCC0099A4D8 /* Oval.png */,
-				B0F7B0C222D480DB0099A4D8 /* GoldenTriangleGrid.png */,
+				B071DAA822D4941B0096266D /* image-1.png */,
+				B071DAA622D492F80096266D /* RulesOfThirds-PNG.png */,
 				B0F7B0A822D32ABE0099A4D8 /* AppDelegate.swift */,
 				B0F7B0AA22D32ABE0099A4D8 /* ViewController.swift */,
 				B0F7B0AC22D32ABE0099A4D8 /* Main.storyboard */,
@@ -75,9 +72,6 @@
 				B0F7B0B122D32AC00099A4D8 /* LaunchScreen.storyboard */,
 				B0F7B0B422D32AC00099A4D8 /* Info.plist */,
 				B0F7B0BC22D33DAC0099A4D8 /* PhotoViewController.swift */,
-				B0F7B0C422D483300099A4D8 /* OverlayViewController.swift */,
-				B0F7B0C522D483300099A4D8 /* OverlayViewController.xib */,
-				B0F7B0C822D485510099A4D8 /* CustomOverlayView.swift */,
 			);
 			path = AVFondation;
 			sourceTree = "<group>";
@@ -140,11 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F7B0C322D480DB0099A4D8 /* GoldenTriangleGrid.png in Resources */,
 				B0F7B0B322D32AC00099A4D8 /* LaunchScreen.storyboard in Resources */,
 				B0F7B0C122D47CCD0099A4D8 /* Oval.png in Resources */,
-				B0F7B0C722D483300099A4D8 /* OverlayViewController.xib in Resources */,
 				B0F7B0B022D32AC00099A4D8 /* Assets.xcassets in Resources */,
+				B071DAA722D492F80096266D /* RulesOfThirds-PNG.png in Resources */,
+				B071DAA922D4941B0096266D /* image-1.png in Resources */,
 				B0F7B0AE22D32ABE0099A4D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,8 +153,6 @@
 				B0F7B0AB22D32ABE0099A4D8 /* ViewController.swift in Sources */,
 				B0F7B0A922D32ABE0099A4D8 /* AppDelegate.swift in Sources */,
 				B0F7B0BD22D33DAC0099A4D8 /* PhotoViewController.swift in Sources */,
-				B0F7B0C922D485510099A4D8 /* CustomOverlayView.swift in Sources */,
-				B0F7B0C622D483300099A4D8 /* OverlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,14 +24,6 @@ class PhotoViewController: UIViewController {
         if let availableImage = takenPhoto {
             imageView.image = availableImage
         }
-        
-//        //customView stuff
-//        let customViewController = OverlayViewController(
-//            nibName:"CustomOverlayViewController",
-//            bundle: nil
-//        )
-//        let customView:CustomOverlayView = customViewController.view as! CustomOverlayView
-//        customView.frame = self.view.frame
     }
     
     override func didReceiveMemoryWarning() {

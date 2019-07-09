@@ -16,6 +16,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     var takePhoto = false
    
+    @IBOutlet var gridLine: UIImageView!
+    
     @IBAction func buttonTake(_ sender: Any) {
         takePhoto = true
     }
@@ -54,6 +56,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             self.view.layer.addSublayer(self.previewLayer)
             self.previewLayer.frame = self.view.layer.frame
             captureSession.startRunning()
+        
+            self.view.addSubview(gridLine)
+            
+        
         
             let dataOutput = AVCaptureVideoDataOutput()
             dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString):NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
