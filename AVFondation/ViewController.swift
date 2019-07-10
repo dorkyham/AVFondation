@@ -50,16 +50,15 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }catch{
             print(error.localizedDescription)
         }
-        
+            //buat kamera
             let previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
             self.previewLayer = previewLayer
             self.view.layer.addSublayer(self.previewLayer)
             self.previewLayer.frame = self.view.layer.frame
             captureSession.startRunning()
         
+            //masukin gridnya
             self.view.addSubview(gridLine)
-            
-        
         
             let dataOutput = AVCaptureVideoDataOutput()
             dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString):NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
