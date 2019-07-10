@@ -38,23 +38,23 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenTriangleGrid" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-mf-Nar">
-                                <rect key="frame" x="0.0" y="177" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="177" width="414" height="541"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="533" id="SKO-3K-GMW"/>
-                                    <constraint firstAttribute="width" constant="414" id="pmD-OR-Qci"/>
+                                    <constraint firstAttribute="width" constant="414" id="ilS-U2-tmd"/>
+                                    <constraint firstAttribute="height" constant="541" id="tA2-7I-dre"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="top" secondItem="yOm-mf-Nar" secondAttribute="bottom" id="1SW-1Z-v5S"/>
                             <constraint firstItem="qpN-Pn-XX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8tN-rr-vwZ"/>
+                            <constraint firstItem="yOm-mf-Nar" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EYE-xC-IZ7"/>
                             <constraint firstItem="qpN-Pn-XX3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JwZ-hP-RAh"/>
-                            <constraint firstItem="yOm-mf-Nar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mbj-7k-JZI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PyB-UD-d64" secondAttribute="trailing" constant="159" id="Q8V-gr-2xh"/>
-                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="top" secondItem="yOm-mf-Nar" secondAttribute="bottom" constant="8" id="Wly-vg-Ndj"/>
+                            <constraint firstItem="yOm-mf-Nar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="WSv-M8-on8"/>
                             <constraint firstItem="PyB-UD-d64" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZNb-oB-kkL"/>
-                            <constraint firstItem="yOm-mf-Nar" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dvV-NL-CEz"/>
-                            <constraint firstItem="yOm-mf-Nar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="kMo-D7-Jdl"/>
+                            <constraint firstItem="yOm-mf-Nar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dQ2-es-bAe"/>
                             <constraint firstItem="qpN-Pn-XX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="630" id="lCU-fz-O3R"/>
                             <constraint firstAttribute="bottom" secondItem="qpN-Pn-XX3" secondAttribute="bottom" id="mcX-bi-mNo"/>
                             <constraint firstItem="PyB-UD-d64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="oI3-B3-kpU"/>
