@@ -18,37 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="lK7-4D-ThX">
+                                <rect key="frame" x="0.0" y="143" width="414" height="575"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="L6k-9I-gex"/>
+                                    <constraint firstAttribute="height" constant="575" id="UCN-zB-eMO"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenTriangleGrid" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-mf-Nar">
+                                <rect key="frame" x="0.0" y="143" width="414" height="575"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="575" id="5cm-JC-sdw"/>
+                                    <constraint firstAttribute="width" constant="414" id="VRo-Ob-O4F"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpN-Pn-XX3">
-                                <rect key="frame" x="0.0" y="718" width="414" height="178"/>
+                                <rect key="frame" x="0.0" y="706" width="414" height="190"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="9gX-nb-ZVS"/>
-                                    <constraint firstAttribute="height" constant="178" id="bUi-po-qf1"/>
+                                    <constraint firstAttribute="height" constant="190" id="H2o-bN-n8t"/>
+                                    <constraint firstAttribute="width" constant="414" id="oTo-au-PBN"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyB-UD-d64">
-                                <rect key="frame" x="159" y="765" width="96" height="97"/>
+                                <rect key="frame" x="156" y="757" width="102" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="5CB-Iw-juE"/>
-                                    <constraint firstAttribute="width" constant="96" id="I4a-my-l8F"/>
+                                    <constraint firstAttribute="width" constant="102" id="4jz-DK-CyD"/>
+                                    <constraint firstAttribute="height" constant="100" id="nOO-MT-UV3"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Oval.png"/>
                                 <connections>
                                     <action selector="buttonTake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1x-n9-sjC"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenTriangleGrid" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-mf-Nar">
-                                <rect key="frame" x="0.0" y="177" width="414" height="541"/>
-                                <gestureRecognizers/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hbs-UP-67w">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="ilS-U2-tmd"/>
-                                    <constraint firstAttribute="height" constant="541" id="tA2-7I-dre"/>
+                                    <constraint firstAttribute="width" constant="414" id="FMG-Dp-0qj"/>
+                                    <constraint firstAttribute="height" constant="156" id="Tv1-5f-hvJ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVh-nO-5eX">
-                                <rect key="frame" x="332" y="792" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Grid"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVh-nO-5eX">
+                                <rect key="frame" x="49" y="764" width="59" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="3pa-Ji-FSC"/>
+                                    <constraint firstAttribute="height" constant="59" id="TC9-JB-XAD"/>
+                                </constraints>
+                                <state key="normal" title="Grid" image="grid.png"/>
                                 <connections>
                                     <action selector="gridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IMB-9u-VcQ"/>
                                 </connections>
@@ -56,22 +76,32 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="top" secondItem="yOm-mf-Nar" secondAttribute="bottom" id="1SW-1Z-v5S"/>
-                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8tN-rr-vwZ"/>
-                            <constraint firstItem="yOm-mf-Nar" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EYE-xC-IZ7"/>
-                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JwZ-hP-RAh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PyB-UD-d64" secondAttribute="trailing" constant="159" id="Q8V-gr-2xh"/>
-                            <constraint firstItem="yOm-mf-Nar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="WSv-M8-on8"/>
-                            <constraint firstItem="PyB-UD-d64" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZNb-oB-kkL"/>
-                            <constraint firstItem="yOm-mf-Nar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dQ2-es-bAe"/>
-                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="630" id="lCU-fz-O3R"/>
-                            <constraint firstAttribute="bottom" secondItem="qpN-Pn-XX3" secondAttribute="bottom" id="mcX-bi-mNo"/>
-                            <constraint firstItem="PyB-UD-d64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="oI3-B3-kpU"/>
+                            <constraint firstItem="lK7-4D-ThX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="0WS-J4-WEj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WVh-nO-5eX" secondAttribute="bottom" constant="39" id="4ee-bV-1pS"/>
+                            <constraint firstItem="lK7-4D-ThX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ACx-wH-1YL"/>
+                            <constraint firstItem="Hbs-UP-67w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BvT-hK-Ydw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PyB-UD-d64" secondAttribute="bottom" constant="5" id="Gye-wS-uCJ"/>
+                            <constraint firstItem="yOm-mf-Nar" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H70-lo-F7L"/>
+                            <constraint firstItem="lK7-4D-ThX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HTr-fZ-dmi"/>
+                            <constraint firstItem="yOm-mf-Nar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Ia8-Aa-Ypu"/>
+                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QLt-HP-6AZ"/>
+                            <constraint firstItem="PyB-UD-d64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="QOc-Eu-qs4"/>
+                            <constraint firstItem="Hbs-UP-67w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZQG-3l-tUn"/>
+                            <constraint firstItem="Hbs-UP-67w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="egQ-fk-7gL"/>
+                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ew7-O7-bsl"/>
+                            <constraint firstItem="qpN-Pn-XX3" firstAttribute="top" secondItem="Hbs-UP-67w" secondAttribute="bottom" constant="550" id="fLs-f3-Eb5"/>
+                            <constraint firstItem="WVh-nO-5eX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="jCU-26-6gv"/>
+                            <constraint firstItem="PyB-UD-d64" firstAttribute="leading" secondItem="WVh-nO-5eX" secondAttribute="trailing" constant="48" id="mMH-JW-q4j"/>
+                            <constraint firstAttribute="bottom" secondItem="qpN-Pn-XX3" secondAttribute="bottom" id="rhD-iD-6al"/>
+                            <constraint firstItem="yOm-mf-Nar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sMK-qi-vTF"/>
+                            <constraint firstItem="PyB-UD-d64" firstAttribute="top" secondItem="lK7-4D-ThX" secondAttribute="bottom" constant="39" id="w93-Rv-FvE"/>
+                            <constraint firstItem="WVh-nO-5eX" firstAttribute="top" secondItem="lK7-4D-ThX" secondAttribute="bottom" constant="46" id="xUW-pR-duT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="nhk-bo-mdJ"/>
                     <connections>
+                        <outlet property="cameraView" destination="lK7-4D-ThX" id="N7m-UD-2Am"/>
                         <outlet property="gridLine" destination="yOm-mf-Nar" id="viu-HL-kav"/>
                     </connections>
                 </viewController>
@@ -142,5 +172,6 @@
     <resources>
         <image name="GoldenTriangleGrid" width="414" height="556"/>
         <image name="Oval.png" width="352" height="359"/>
+        <image name="grid.png" width="147" height="147"/>
     </resources>
 </document>

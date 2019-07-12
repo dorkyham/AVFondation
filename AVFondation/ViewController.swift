@@ -14,12 +14,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var previewLayer:CALayer!
     var captureDevice:AVCaptureDevice!
     
+    @IBOutlet var cameraView: UIView!
+    
     var takePhoto = false
     var isGridShowen = true
-    //zoom in zoom out
-    let minimumZoom: CGFloat = 1.0
-    let maximumZoom: CGFloat = 3.0
-    var lastZoomFactor: CGFloat = 1.0
     
     @IBOutlet var gridLine: UIImageView!
     
@@ -39,10 +37,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     func prepareCamera(){
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
         
-
-        
         if let availabeDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back).devices as? [AVCaptureDevice] {
-            
             captureDevice = availabeDevices.first
             beginSession()
         }
@@ -58,8 +53,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             //buat kamera
             let previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
             self.previewLayer = previewLayer
-            self.view.layer.addSublayer(self.previewLayer)
-            self.previewLayer.frame = self.view.layer.frame
+            self.cameraView.layer.addSublayer(previewLayer)
+            self.previewLayer.frame = self.cameraView.bounds
+        
             captureSession.startRunning()
         
             //masukin gridnya
@@ -132,37 +128,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
     }
     
-    
-//    @IBAction func pinched(_ sender: UIPinchGestureRecognizer) {
-//        guard let device = captureDevice else { return }
-//
-//        // Return zoom value between the minimum and maximum zoom values
-//        func minMaxZoom(_ factor: CGFloat) -> CGFloat {
-//            return min(min(max(factor, minimumZoom), maximumZoom), device.activeFormat.videoMaxZoomFactor)
-//        }
-//
-//        func update(scale factor: CGFloat) {
-//            do {
-//                try device.lockForConfiguration()
-//                defer { device.unlockForConfiguration() }
-//                device.videoZoomFactor = factor
-//            } catch {
-//                print("\(error.localizedDescription)")
-//            }
-//        }
-//
-//        let newScaleFactor = minMaxZoom(sender.scale * lastZoomFactor)
-//
-//        switch sender.state {
-//        case .began: fallthrough
-//        case .changed: update(scale: newScaleFactor)
-//        case .ended:
-//            lastZoomFactor = minMaxZoom(newScaleFactor)
-//            update(scale: lastZoomFactor)
-//        default: break
-//        }
-//    }
-//
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
