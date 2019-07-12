@@ -16,6 +16,8 @@
 	<string>because we can</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>because of course</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>we can</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>NSCameraUsageDescription</key>
