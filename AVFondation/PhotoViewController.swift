@@ -26,6 +26,24 @@ class PhotoViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func savePhoto(_ sender: Any) {
+        guard let selectedImage = imageView.image else {
+            print("Image not found!")
+            return
+        }
+        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            // we got back an error!
+            print("save error")
+        } else {
+            print("Your image has been saved to your photos.")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
